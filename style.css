@@ -1,0 +1,154 @@
+body {
+  padding: 0px;
+  margin:0px;
+  font-family: Cambria, Georgia, serif;
+	line-height: 1.2em;
+	font-size: 100%;
+  background:#CCC url(img/noise.png);
+}
+
+header, #menu, #footer, h1, h2, h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+header {
+  color: #fff;
+  background:#333 url(img/noise.png); 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header h1{
+	padding: 30px 0 20px 80px;
+	margin: 0;
+	background-image: url(img/logo.gif);
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+}
+footer { 
+	color: #399;
+	background:#333 url(img/noise.png);  
+	padding:0;
+	margin:0;
+	clear: both;
+  	width: 100%; 
+}
+footer h3 {
+padding: 20px;
+}
+
+#content{
+max-width:1280px;
+margin: 20px auto;
+}
+
+#main {
+  float: left;
+  width: 60%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+#main .textArea {
+	color: #222;
+	margin-right: 2%;
+	padding: 0 2% 0 2%;
+}
+aside{
+	
+	float: left;
+	margin: 0 0 20px 1%;
+	padding: 0;
+	width:39%; 
+	background:#399 url(img/noise.png);
+}
+aside .textArea {
+	padding: 0 20px;
+	color: #fff;
+	font-size: 85%;
+	 
+} 
+aside a {
+	color:#f01163;	
+	text-decoration:none;
+}
+aside a:hover {
+	color:#333;
+}
+.img {
+	float:left;
+	margin: 0 10px 10px 0;
+	width: 100%;
+	height: auto;
+	max-width: 380px;
+}
+#menu ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  color: #333;
+  background:#555 url(img/noise.png);
+  overflow: hidden; 
+}
+
+#menu li {
+  display:inline-block;
+}
+#menu a {
+  display: block;
+  color:#3CC;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+#menu a:hover {
+	background: rgb(51,51,51);
+	color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and(max-width:768px){
+	#main {
+	clear: both;
+	width: 100%;
+	}
+
+	#main .textArea{
+		margin: 0;
+	}
+
+	aside{
+		margin: 1%;
+		clear: both;
+		width:98%; 
+	}
+}
+
+/*Mobiele telefoon */
+
+@media screen and (max-width: 480px){
+	body{
+		font-size: 120%;
+	}
+
+	aside{
+		margin: 0;
+		width: 100%;
+	}
+
+	#menu li{
+		display: block;
+		border-bottom: solid 1px white;
+		text-align: center;
+		padding: 5px;
+	}
+
+	#menu ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	.textArea h1{
+		line-height: 1.0;
+		margin: 0;
+	}
+}
